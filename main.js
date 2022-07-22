@@ -1,11 +1,13 @@
 
+
 function initMap(){
-    const argCoords = {lat: -33.61 , lng: -63.61}; 
+    const tempCoords = {lat:-34.7655977 , lng: -58.3802391}; 
     const map = new google.maps.Map( mapDiv, {
-        center: argCoords,
+        center: tempCoords,
         zoom:6,
     });
     const marker = new google.maps.Marker( {
+        //position: tempCoords, 
         map,
     }); 
 
@@ -19,7 +21,7 @@ function initMap(){
                     };
                     map.setCenter(coords);
                     marker.setPosition(coords);
-                    map.setZoom(14);
+                    map.setZoom(12);
                 },
                 () => {
                     alert("Tu navegador falla tiene un error")
