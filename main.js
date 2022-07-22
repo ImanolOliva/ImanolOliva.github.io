@@ -6,7 +6,6 @@ function initMap(){
         zoom:6,
     });
     const marker = new google.maps.Marker( {
-        position: argCoords, 
         map,
     }); 
 
@@ -20,7 +19,7 @@ function initMap(){
                     };
                     map.setCenter(coords);
                     marker.setPosition(coords);
-                    map.setZoom(7);
+                    map.setZoom(14);
                 },
                 () => {
                     alert("Tu navegador falla tiene un error")
